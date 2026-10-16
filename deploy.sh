@@ -18,7 +18,7 @@ if ! git diff --cached --quiet; then
 fi
 
 if ! gh repo view ClimbHillTmr/WebMe >/dev/null 2>&1; then
-  gh repo create ClimbHillTmr/WebMe --public --description 'Qi Guo — Research, publications and projects'
+  gh repo create ClimbHillTmr/WebMe --public --description 'WebMe — Research interests, publications and projects. A bilingual academic homepage.'
 fi
 if git remote get-url origin >/dev/null 2>&1; then
   remote="$(git remote get-url origin)"
